@@ -23,12 +23,12 @@ let downloadBtn = document.querySelector("#download")
 let resetBtn = document.querySelector("#reset")
 
 function handleUpload() {
-    const ApiKey = "72EYF4UwcKVURTrv6ohUHjmc";
+    const ApiKey = "";
     const formdata = new FormData();
     formdata.append('image_file', image);
     formdata.append('size', 'auto');
 
-    fetch("https://api.remove.bg/v1.0/removebg", {
+    fetch("", {
         method: "POST",
         headers: { "X-Api-Key": ApiKey },
         body: formdata,
